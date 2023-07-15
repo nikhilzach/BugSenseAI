@@ -11,13 +11,22 @@
         android:roundIcon="@mipmap/bug"
         android:supportsRtl="true"
         android:theme="@style/Theme.ImageClassification">
+        <activity android:name=".middle_activity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+
+
         <activity android:name=".NewActivity_Remedies" />
     </application>
 

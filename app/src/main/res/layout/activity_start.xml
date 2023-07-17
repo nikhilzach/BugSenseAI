@@ -11,51 +11,64 @@
 
     <ImageView
         android:id="@+id/BugText"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="413dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="-3dp"
-        android:layout_marginTop="-3dp"
-        android:layout_marginEnd="2dp"
-        android:layout_marginBottom="1dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/purplebg" />
+        android:layout_marginStart="-2dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="#000000"
+        android:scaleType="centerCrop" />
 
     <pl.droidsonroids.gif.GifImageView
-        android:layout_width="148dp"
-        android:layout_height="214dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="107dp"
-        android:layout_marginTop="282dp"
-        android:layout_marginEnd="156dp"
-        android:src="@drawable/source" />
-
-    <TextView
-        android:id="@+id/my_textview"
-        android:layout_width="427dp"
-        android:layout_height="181dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginStart="-16dp"
-        android:layout_marginTop="0dp"
-        android:layout_marginEnd="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="648dp"
+        android:layout_marginEnd="-5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/loadingbar" />
 
-        android:fontFamily="@font/esthetique"
-        android:letterSpacing="0.1"
-        android:lineSpacingExtra="24sp"
-        android:padding="16dp"
-        android:text=" BUGSENSEAI"
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="304dp"
+        android:layout_height="235dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="309dp"
+        android:layout_marginEnd="53dp"
+        android:src="@drawable/source2" />
+
+    <TextView
+        android:id="@+id/my_textview"
+        android:layout_width="match_parent"
+        android:layout_height="133dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="37dp"
+        android:background="@drawable/semi_transparent_background"
+
+
+        android:fontFamily="@font/trial"
         android:gravity="center"
-        android:textColor="#FFFFFF"
-        android:textSize="50sp"
 
-         />
+        android:lineSpacingExtra="8sp"
+        android:padding="16dp"
+        android:shadowColor="#80000000"
+        android:shadowDx="2"
+        android:shadowDy="2"
+        android:shadowRadius="3"
+        android:text="BugSenseAI"
+        android:textAllCaps="false"
+        android:textColor="#DAD0C3"
+        android:textSize="55sp" />
 </RelativeLayout>

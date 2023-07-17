@@ -20,16 +20,18 @@ import org.tensorflow.lite.DataType
 import org.tensorflow.lite.support.image.TensorImage
 import org.tensorflow.lite.support.tensorbuffer.TensorBuffer
 import java.util.jar.Manifest
+import android.os.Handler
+import android.os.Looper
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_start)
-        val startButton: Button = findViewById(R.id.start_button)
-        startButton.setOnClickListener {
+        Handler(Looper.getMainLooper()).postDelayed({
             val intent = Intent(this, middle_activity::class.java)
             startActivity(intent)
+            finish() // Optional: If you want to close the current activity after starting the next one.
+        }, 5000) // 2000 milliseconds = 2 seconds
         }
     }
-}
